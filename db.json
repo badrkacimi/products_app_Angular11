@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 4300,
+      "quantity": 600,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": 300,
+      "quantity": 400,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "price": 60,
+      "quantity": 700,
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "BBBBB",
+      "price": 1999,
+      "quantity": 600,
+      "selected": true,
+      "available": true,
+      "id": 5
+    }
+  ]
+}
