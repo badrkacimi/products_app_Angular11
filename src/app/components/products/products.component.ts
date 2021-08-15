@@ -22,7 +22,7 @@ export class ProductsComponent implements OnInit {
 
   onGetAllProducts() {
     this.products$= this.productsService.getAllProducts().pipe(
-      map(data=>{ ({dataState:DataStateEnum.LOADED,data:data})
+      map(data=>{ return ({dataState:DataStateEnum.LOADED,data:data})
       }),
       startWith({dataState:DataStateEnum.LOADING}),
       catchError(err=>of({dataState:DataStateEnum.ERROR, errorMessage:err.message}))
@@ -42,7 +42,8 @@ export class ProductsComponent implements OnInit {
 
   onGetAvailableProducts() {
     this.products$= this.productsService.getAvailableProducts().pipe(
-      map(data=>{({dataState:DataStateEnum.LOADED,data:data})
+      map(data=>{
+        return ({dataState:DataStateEnum.LOADED,data:data})
       }),
       startWith({dataState:DataStateEnum.LOADING}),
       catchError(err=>of({dataState:DataStateEnum.ERROR, errorMessage:err.message}))
@@ -51,7 +52,7 @@ export class ProductsComponent implements OnInit {
 
   onSearch(dataForm: any) {
     this.products$= this.productsService.searchProducts(dataForm.keyword).pipe(
-      map(data=>{({dataState:DataStateEnum.LOADED,data:data})
+      map(data=>{ return ({dataState:DataStateEnum.LOADED,data:data})
       }),
       startWith({dataState:DataStateEnum.LOADING}),
       catchError(err=>of({dataState:DataStateEnum.ERROR, errorMessage:err.message}))
