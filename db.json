@@ -23,14 +23,6 @@
       "quantity": 700,
       "selected": true,
       "available": true
-    },
-    {
-      "name": "BBBBB",
-      "price": 1999,
-      "quantity": 600,
-      "selected": true,
-      "available": true,
-      "id": 5
     }
   ]
 }
